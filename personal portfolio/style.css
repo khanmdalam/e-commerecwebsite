@@ -1,0 +1,318 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* Dark background color for the entire page */
+    color: #fff; /* White text color for better contrast */
+    line-height: 1.6;
+}
+
+/* Center the header content */
+header {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 80px; /* Adjust height as needed */
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+}
+
+/* Style the list */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px; /* Space between list items */
+}
+
+/* Style the links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White link color */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Main content container */
+.content-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between text and photo */
+    padding: 20px;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Text content styling */
+.text-content {
+    flex: 1; /* Take up remaining space */
+    padding-right: 40px; /* Add spacing between text and photo */
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff; /* White text color */
+}
+
+h1 {
+    font-size: 36px;
+    color: #007bff; /* Blue color for emphasis */
+    margin-top: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    color: #ccc; /* Light gray text color */
+    margin-top: 10px;
+    max-width: 600px; /* Limit width for better readability */
+}
+
+/* Social media icons styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.fa-brands {
+    font-size: 24px;
+    margin: 10px;
+    color: #007bff; /* Blue color for icons */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.fa-brands:hover {
+    color: #fff; /* White color on hover */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    margin-top: 20px; /* Add margin to separate from other content */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Photo styling with circular shape and larger size */
+.photo {
+    flex: 1; /* Take up remaining space */
+    text-align: right; /* Align photo to the right */
+}
+
+.photo img {
+    width: 300px; /* Larger size */
+    height: 300px; /* Larger size */
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #007bff; /* Blue border */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Glow effect */
+    object-fit: cover; /* Ensure the image covers the circular area */
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: #2a2a40; /* Darker background for contrast */
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #007bff; /* Blue color for heading */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #ccc; /* Light gray text color */
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Projects Section Styling */
+.projects-section {
+    background-color: #1e1e2f; /* Dark background */
+    padding: 40px 20px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-section h2 {
+    font-size: 28px;
+    color: #007bff; /* Blue color for heading */
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    background-color: #2a2a40; /* Darker background for cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.project-card img {
+    width: 100%; /* Ensure image fills the card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    color: #fff; /* White text color */
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #ccc; /* Light gray text color */
+    line-height: 1.6;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    background-color: #2a2a40; /* Darker background for contrast */
+    padding: 40px 20px;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-section h2 {
+    font-size: 28px;
+    color: #007bff; /* Blue color for heading */
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.skill-card {
+    background-color: #1e1e2f; /* Dark background for cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.skill-card img {
+    width: 100%; /* Ensure image fills the card */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.skill-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-info h3 {
+    font-size: 20px;
+    color: #fff; /* White text color */
+    margin-bottom: 10px;
+}
+
+.skill-info p {
+    font-size: 14px;
+    color: #ccc; /* Light gray text color */
+    line-height: 1.6;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #2a2a40; /* Darker background for contrast */
+    padding: 40px 20px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #007bff; /* Blue color for heading */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #fff; /* White text color */
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 5px;
+    background-color: #1e1e2f; /* Dark background for inputs */
+    color: #fff; /* White text color */
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+ 
